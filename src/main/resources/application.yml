@@ -22,3 +22,4 @@ logging:
     org:
       hibernate:
         SQL: trace
+        type: trace
