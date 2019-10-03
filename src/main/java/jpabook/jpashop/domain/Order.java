@@ -28,8 +28,8 @@ public class Order {
     @JoinColumn(name = "delivery_id")
     private Delivery delivery;
 
-    private LocalDateTime orderDate;    //
+    private LocalDateTime orderDate;    //주문시간
 
     @Enumerated(EnumType.STRING)
-    private DeliveryStatus status; //주문상태 [ORDER, CANCEL]
+    private OrderStatus status; //주문상태 [ORDER, CANCEL]
 }
