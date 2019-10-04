@@ -1,5 +1,6 @@
 package jpabook.jpashop.domain;
 
+import jpabook.jpashop.domain.item.DeliveryStatus;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,5 +21,5 @@ public class Delivery {
     private Address address;
 
     @Enumerated(EnumType.STRING)
-    private OrderStatus status; //READY, COMP
+    private DeliveryStatus status; //READY, COMP
 }
